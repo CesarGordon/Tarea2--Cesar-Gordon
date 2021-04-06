@@ -1,0 +1,61 @@
+header{
+    background-color:white;
+    text-align: center;  
+}
+
+#alerta{
+    display: none;
+    padding: 10px 30px;
+}
+
+#cajaprincipal{
+    background-color:white;
+    border-radius:6px;
+    width: 600px;
+    max-width: 100%;
+}
+
+body{
+    background-color: cornflowerblue;
+    display:flex;
+    align-items: left;
+    justify-items: left;
+    min-height: 100vh;
+
+}
+
+.contenedor input{
+    width: 95%;
+    height: 30px;
+}
+
+.contenedorCheckBox input{
+    align-items: left;
+    width: 20%;
+}
+
+form textarea{
+    width: 50%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+form li{
+    padding: 8px 5px;
+}
+
+#limpiar{
+    background-color: cornflowerblue;
+    width: 90%;
+    margin: 5px;
+    border: 1px black;
+}
+
+#enviar{
+    background-color:cornflowerblue;
+    width: 90%;
+    margin: 5px;
+    border: 1px black;
+}

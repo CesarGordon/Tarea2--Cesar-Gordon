@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta name="encoding" charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario">
+    <meta name="abstract" content="content">
+    <meta name="lenguage" content="Es">
+    
+    <title>Formulario</title>
+
+    <!--estilos-->
+    <link rel="stylesheet" href=".css/estilos.css"/>
+    
+    <!--JS-->
+    <script src="js/app.js" type="text/javascript" charset="UTF-8" async defer></script>
+</head>
+
+<body>
+    <div id="cajaprincipal">
+        <div id="alerta"></div>
+        <form action="formulario" method="post" action="#">
+        <header>
+            <h1>Formulario</h1>
+        </header>
+        <hr>
+        <ul>
+            <li class="contenedor">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" placeholder="Nombre" required=""/>
+            </li>
+            <br>
+            <li class="contenedor">
+                <label for="apellidos">Apellidos</label>
+                <input id="apellidos" type="text" placeholder="Apellidos" required=""/>
+            </li>
+            <br>
+            <li class="contenedor">
+                <label for="numero">Numero de telefono</label>
+                <input id="telefono" type="number" placeholder="Numero de telefono" required=""/>
+            </li>
+            <br>
+            <li class="contenedor">
+                <label for="rut">RUT</label>
+                <input id="rut" type="text" placeholder="xxxxxxx-x" pattern="[0-9]*[kK]?" required=""/>
+            </li>
+            <br>
+            <li class="contenedor">
+                <label for="email">Correo Electrónico</label>
+                <input id="email" type="email" placeholder="Correo Electrónico" required=""/>
+            </li>
+            <br>
+            <li class="contenedorCheckBox">
+                <p>Lenguajes de Programacion de Interes</p>
+                <input type="checkbox" name="checkbox1" id="checkbox1"/>
+                <label for="checkbox1">Python</label>
+                <input type="checkbox" name="checkbox2" id="checkbox2"/>
+                <label for="checkbox2">Java</label>
+                <input type="checkbox" name="checkbox4" id="checkbox4"/>
+                <label for="checkbox4">PHP</label>
+                <input type="checkbox" name="checkbox3" id="checkbox3"/>
+                <label for="checkbox3">TypeScript</label>
+                <input type="checkbox" name="checkbox5" id="checkbox5"/>
+                <label for="checkbox5">C#</label>
+                <input type="checkbox" name="checkbox6" id="checkbox6"/>
+                <label for="checkbox6">C++</label>
+            </li>
+            <br>
+            <li>
+                <label for="experiencia-laboral">Años de Experiencia Laboral</label>
+                <br>
+                <br>
+                <input type="radio" value="exp1" name="experiencia-laboral" id="exp1"/>
+                <label for="id1">1</label>
+                <input type="radio" value="exp2" name="experiencia-laboral" id="exp2"/>
+                <label for="id2">2</label>
+                <input type="radio" value="exp3" name="experiencia-laboral" id="exp3"/>
+                <label for="id3">3</label>
+                <input type="radio" value="exp4" name="experiencia-laboral" id="exp4"/>
+                <label for="id4">4</label>
+                <input type="radio" value="exp5" name="experiencia-laboral" id="exp5"/>
+                <label for="id5">5 o mas</label>
+            </li>
+            <br>
+            <li>
+                <label for="descripcion">Descripcion</label>
+                <br>
+                <br>
+                <textarea id="descripcion" maxlength="300"></textarea>
+            </li>
+            <br>
+            <li class="contenedor">
+                <label>Conocimiento de Programacion</label>
+                <input type="range" min="0" max="10" value="0"/>
+            </li>
+            <br>
+            <li>
+                 <button type="submit" id="enviar">Enviar Datos</button>
+            </li>
+            <li>  
+                <button type="reset" id="limpiar">Limpiar Datos</button>
+            </li>
+        </ul>
+    </form>
+    </div>
+    
+</body>
+
+</html>
